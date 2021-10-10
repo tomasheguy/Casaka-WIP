@@ -7,15 +7,14 @@
 }
 
 header {
-    background-color: darkgray;
+    background-color: black;
     color: #FFFFFF;
     font-family: Roboto;
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
-    letter-spacing: 2.25px;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -30,12 +29,13 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .Covid-Info{
     display: flex;
     flex-direction: row;
-    width: 35%;
+    width: 20%;
     padding: 2px;
 }
 
@@ -49,7 +49,7 @@ header {
     justify-content:center;
     align-items: center;
     font-size: 14px;
-    width: 65%;
+    width: 50%;
     border: none;
     border-radius: 3px;
     color: #666;
@@ -104,16 +104,46 @@ header {
     
 }
 
-
-
 .main-header-bottom-bar{
-    display: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     }
 
+.main-header-bottom-bar img {
+    width: 40%;
+    }
+.burger-menu {
+    width: 20%;
+}
+
+.main-menu{
+    display: none;
+}
+
+.lower-right-menu{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.lower-right-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
 
 
 footer {
-    background-color: darkgray;
+    background-color: black;
     color: #FFFFFF;
     font-family: Roboto;
     font-size: 12px;
@@ -135,7 +165,26 @@ footer {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
     align-items: center;
+    border-bottom: 70% 2px white;
+    padding: 5px 20px;
+}
+
+.Informacion-Util{
+    display: none;
+}
+
+.Ayuda{
+    display: none;
+}
+
+.Conocenos{
+    display: none;
+}
+
+.Titulo-Menu {
+    font-weight: bold;
 }
 
 .main-footer-bottom-bar {
@@ -144,6 +193,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .redes-sociales ul{
@@ -168,23 +218,24 @@ footer {
 }
 
 
-@media (min-width: 361px){
-    .bottom-top-header{
-        display:none;
-    }
+@media (min-width: 481px){
 
     .Covid-Info{ 
-        width: 25%;
+        width: 20%;
     }
 
     .search-results{
         width: 40%;
     }
     
+    .dropdown{
+        width: 5%;
+    }
+
     .upper-top-menu{
         display: flex;
         flex-direction: row;
-        width: 30%;
+        width: 25%;
         }
     
     .upper-top-menu ul{
@@ -198,6 +249,61 @@ footer {
         text-decoration: none;
         color: white;
         justify-content: space-between;
+        padding: 0px 8px;
+    }
+
+    .main-header-bottom-bar img {
+        width: 10%;
+        }
+    .burger-menu {
+        display: none;
+    }
+    
+    .main-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        width: 80%;
+        padding: 0px 10px;
+    }
+    
+    .lower-right-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        width: 10%;
+        padding: 0px 5px;
+    }
+
+
+    .Menu-Footer-resumidos {
+        display: none;
+    }
+
+    .Informacion-Util{
+        size: 12px;
+        display: flex;
+        flex-direction:column;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .Ayuda{
+        size: 12px;
+        display: flex;
+        flex-direction:column;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .Conocenos{
+        size: 12px;
+        display: flex;
+        flex-direction:column;
+        justify-content: left;
+        align-items: center;
     }
 
     .main-header-bottom-bar{
@@ -210,12 +316,17 @@ footer {
         align-items: center;
     }
 
+    .main-header-bottom-bar img{
+        width: 20%;
+    }
+
     .main-menu ul{
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        width: 80%;
     }
 
     .lower-right-menu ul{
@@ -224,6 +335,7 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        width: 20%;
     }
 
     
