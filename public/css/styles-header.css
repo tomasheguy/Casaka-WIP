@@ -2,17 +2,239 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 header {
-    background-color: black;
+    background-color: darkgray;
     color: #FFFFFF;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 2.25px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Covid-Info{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    padding: 2px;
+}
+
+.Covid-Info p{
+    size: 8px;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    font-size: 14px;
+    width: 65%;
+    border: none;
+    border-radius: 3px;
+    color: #666;
+    height: 40px;
+    align-self: center;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    margin: 0px;
+    }
+
+.searchbar {
+    width: 95%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    align-self: center;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.upper-top-menu{
+    display: none;
+    
+}
+
+
+
+.main-header-bottom-bar{
+    display: none;
+    }
+
+
+
+footer {
+    background-color: darkgray;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 2.25px;
+    text-align: left;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+
+.main-footer-top-bar {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer-bottom-bar {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    size: 20px;
+}
+
+.redes-sociales ul li{
+    padding: 6px;
+}
+
+.COPYRIGHT {
+    font-size: 8px;
+    align-self: left;
+    padding-left: 20px;
+
+}
+
+
+@media (min-width: 361px){
+    .bottom-top-header{
+        display:none;
+    }
+
+    .Covid-Info{ 
+        width: 25%;
+    }
+
+    .search-results{
+        width: 40%;
+    }
+    
+    .upper-top-menu{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        }
+    
+    .upper-top-menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    .upper-top-menu ul li a{
+        text-decoration: none;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .main-header-bottom-bar{
+        size: 12px;
+        background-color: white;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-menu ul{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lower-right-menu ul{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+}
+
+@media (min-width: 769px){
+
+
+}
+
+@media (min-width: 1025px){
+
 
 }
