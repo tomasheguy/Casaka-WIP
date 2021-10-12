@@ -27,9 +27,9 @@
             <h2>Su Carrito:</h2>
 
             <div class="Titles-Cart">
-                <p>Items</p>
-                <p>Precio</p>
-                <p>Cantidad</p>
+                <p class="items-title">Items</p>
+                <p class="precio-title">Precio</p>
+                <p class="cantidad-title">Cantidad</p>
             </div>
 
             <div class="Cart-Content">
@@ -40,21 +40,23 @@
                 </div>
                 <p class="precio-producto">$120.00</p>
                 <div class="dropdown-unidades">
-                    <button class="dropntn"</button>
-                    <div class="dropdown-content">
-                        <a href="#">0</a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                    </div>   
+                    <label for="unidades"></label>
+                    <select name="unidades" id="unidades">
+
+                    
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>   
                 </div>
             </div>
 
             <div class="subtotal">
                     <p>Subtotal</p>
-                    <p>$120.00</p>
+                    <p>$1200.00</p>
             </div>
             
 
@@ -64,22 +66,22 @@
             <h2>Summary</h2>
             <div class="subtotal">
                 <p>Subtotal</p>
-                <p>$120.00</p>
+                <p>$1200.00</p>
             </div>
 
             <div class="shipping">
                 <p>Shipping</p>
-                <p>$20.00</p>
+                <p>$200.00</p>
             </div>
 
             <div class="taxes">
                 <p>Impuestos</p>
-                <p>$24.70</p>
+                <p>$240.70</p>
             </div>
 
             <div class="total-a-pagar">
                 <p>Total</p>
-                <p>$144.70</p>
+                <p>$1440.70</p>
             </div>
 
             <form class="submit-purchase" action:"/" method="POST">    

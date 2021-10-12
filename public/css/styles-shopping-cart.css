@@ -13,13 +13,12 @@ main {
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
-    line-height: 21px;
-    text-align: right;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -30,6 +29,11 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    width: 45%;
+    padding: 30px 10px;
+    padding-left: 30px;
+    border-left: ;
+
 }
 
 .Titles-Cart {
@@ -39,7 +43,28 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-top-color: gray;
+    border-bottom-color: gray;
+    width: 100%;
 }
+
+.items-title {
+    width: 60%;
+    text-align: left;
+}
+
+.precio-title {
+    width: 20%;
+    text-align: center;
+}
+
+.cantidad-title {
+    width: 20%;
+    text-align: center;
+}
+
 
 .Cart-Content {
     text-align: right;
@@ -48,6 +73,12 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.Cart-Content img {
+    width: 20%;
+    padding: 0px 5px;
 }
 
 .detalle-producto {
@@ -57,7 +88,22 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    width: 40%;
+
 }
+
+.precio-producto {
+    width: 20%;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.dropdown-unidades {
+    width: 20%;
+    align-content: center;
+}
+
+
 
 .subtotal {
     text-align: right;
@@ -76,6 +122,8 @@ main {
     justify-content: space-between;
     align-items: flex-start;
     background-color: gray;
+    width: 45%;
+    padding: 30px 10px;
 }
 
 .subtotal {
